@@ -5,10 +5,10 @@ for i in range(256):
 
 def string_has_unique_characters_with_array(string: str):
     for character in string:
-        if characters[int(ord(character))]:
+        if characters[ord(character)]:
             return False
         else:
-            characters[int(ord(character))] = True
+            characters[ord(character)] = True
     return True
 
 
